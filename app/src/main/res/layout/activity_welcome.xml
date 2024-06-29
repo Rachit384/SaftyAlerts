@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Welcome"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/signupuse"
+            android:layout_gravity="center"
+            android:layout_marginTop="45dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Hello"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            android:textStyle="bold"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to Safety Alerts !!"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/Signupbutton"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_cmbine"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:text="Sign Up"
+            android:textSize="18sp"
+            android:textColor="@drawable/textcolorchange"
+            android:gravity="center"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="55dp"/>
+        <Button
+            android:id="@+id/loginbutton"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_cmbine"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:text="Log In"
+            android:textSize="18sp"
+            android:textColor="@drawable/textcolorchange"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"/>
+
+
+
+
+
+
+</LinearLayout>

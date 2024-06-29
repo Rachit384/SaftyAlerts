@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogIn"
+    android:background="@color/white">
+
+
+
+
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/lottieLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        app:lottie_rawRes="@raw/signup"
+        android:elevation="5dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"
+        />
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="50dp"
+        android:elevation="50dp"
+        android:layout_below="@+id/lottieLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/card"
+            >
+
+
+
+
+
+
+
+
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+
+                android:layout_marginTop="70dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/eemaail"
+                android:hint="Email"
+                android:textColor="@color/black"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/entery"
+                android:textColorHint="@color/black"
+                android:paddingLeft="15dp"
+                android:paddingBottom="2dp"
+                />
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:paddingLeft="15dp"
+                android:layout_below="@+id/eemaail"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/Password"
+                android:textColorHint="@color/black"
+                android:hint="Password"
+                android:paddingBottom="2dp"
+                android:inputType="textPassword"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:background="@drawable/entery"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forgot Password !"
+                android:textColor="#1CA1EA"
+                android:layout_below="@+id/Password"
+                android:id="@+id/forgot"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/forgot"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp">
+                <Button
+                    android:id="@+id/Login"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/button_cmbine"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:text="LogIn"
+
+                    android:textSize="18sp"
+                    android:textColor="@drawable/textcolorchange"
+
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:layout_below="@+id/forgot"
+
+                    >
+
+
+                </Button>
+                <ProgressBar
+                    android:id="@+id/prgrss"
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

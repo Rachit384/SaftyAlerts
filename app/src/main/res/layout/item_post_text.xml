@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/black"
+   >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#3E3D3D"
+        android:id="@+id/mainbreak"
+     android:layout_marginTop="3dp"
+        />
+
+    <!--<androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       app:cardCornerRadius="20dp"
+
+        android:backgroundTint="#41BC47"
+        android:elevation="10dp"
+        >
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:padding="10dp"
+            android:layout_marginTop="5dp">-->
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="10dp"
+        android:scaleType="centerCrop"
+android:layout_marginTop="10dp"
+        android:src="@drawable/place"
+        app:shapeAppearance="@style/roundImageView"/>
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textStyle="bold"
+        android:layout_marginTop="13dp"
+        android:textColor="#E6BABA"
+        android:textSize="20dp"
+        android:layout_toRightOf="@id/profileImageView"/>
+
+    <TextView
+
+        android:id="@+id/postTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post text"
+        android:layout_marginTop="15dp"
+        android:textSize="17dp"
+        android:textColor="#A19E9E"
+        android:layout_below="@id/profileImageView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"/>
+
+</RelativeLayout>

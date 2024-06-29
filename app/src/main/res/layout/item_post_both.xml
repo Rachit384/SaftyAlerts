@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    android:background="@color/black">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#838080"
+        android:id="@+id/mainbreak"
+        android:layout_marginTop="3dp"
+        />
+   <!-- <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:cardCornerRadius="20dp"
+        android:backgroundTint="#41BC47"
+        android:elevation="10dp"
+        >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        >-->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="8dp"
+     android:layout_marginStart="10dp"
+        android:layout_marginTop="11dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/place"
+        app:shapeAppearance="@style/roundImageView"/>
+
+
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="2dp"
+        android:textColor="#E6BABA"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/profileImageView"
+        android:textSize="20dp"
+        />
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/postImageView"
+        android:layout_width="375dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/place"
+        app:shapeAppearance="@style/postimageview"
+        android:layout_below="@id/profileImageView"/>
+    <TextView
+        android:id="@+id/postTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post text"
+        android:layout_below="@id/postImageView"
+        android:textSize="17dp"
+android:textColor="#A19E9E"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="20dp"/>
+
+
+</RelativeLayout>

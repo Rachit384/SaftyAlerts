@@ -1,0 +1,25 @@
+<!-- res/layout/fragment_home.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+   <!-- <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:enabled="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:apiKey="@string/google_maps_key"/>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+</LinearLayout>

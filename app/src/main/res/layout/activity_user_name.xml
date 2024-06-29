@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserName"
+    android:background="@color/white">
+
+
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imagesection"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
+
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+
+            android:src="@drawable/userimage"
+            android:layout_marginTop="40dp"
+            android:id="@+id/imagenum"
+            app:shapeAppearanceOverlay="@style/roundImageView"
+            android:scaleType="centerCrop"
+
+
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/addimage"
+            app:layout_constraintBottom_toBottomOf="@+id/imagenum"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="50dp"
+        android:elevation="50dp"
+        android:layout_below="@+id/imagesection"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/card">
+
+
+
+
+            <EditText
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:id="@+id/User"
+                android:paddingEnd="15dp"
+                android:hint="User Name"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:background="@drawable/entery"
+                android:textColorHint="@color/black"
+                android:paddingLeft="15dp"
+                android:paddingBottom="2dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"/>
+
+
+
+
+            <Button
+                android:id="@+id/userproceed"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_cmbine"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:text="Let Me In"
+                android:layout_below="@+id/User"
+                android:layout_centerHorizontal="true"
+                android:textSize="18sp"
+                android:textColor="@drawable/textcolorchange"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:clickable="true" />
+
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/userprgrss"
+                android:layout_gravity="center"
+                android:layout_below="@+id/userproceed"
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"
+                />
+
+
+            <!-- Custom Google Sign-In Button -->
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

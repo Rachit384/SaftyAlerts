@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp"
+    android:background="#FFFFFF">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/lottiesignup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        app:lottie_rawRes="@raw/stwoin"
+        android:elevation="5dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"
+        />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="50dp"
+        android:elevation="50dp"
+        android:layout_below="@+id/lottiesignup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/card"
+            >
+
+
+
+
+
+
+
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="50dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/Email"
+                android:hint="Email"
+                android:paddingEnd="15dp"
+                android:paddingBottom="2dp"
+                android:textColorHint="@color/black"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+                android:background="@drawable/entery"
+                />
+
+
+
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:paddingLeft="15dp"
+                android:paddingEnd="15dp"
+                android:layout_below="@+id/Email"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/Password"
+                android:textColorHint="@color/black"
+                android:hint="Password"
+                android:paddingBottom="2dp"
+                android:inputType="textPassword"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/black"
+                android:background="@drawable/entery"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Password"
+                android:orientation="vertical"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Already Registered !"
+                    android:textColor="#1CA1EA"
+                    android:layout_gravity="center"
+                    android:textSize="16sp"
+                    android:id="@+id/register"
+                    />
+
+                <Button
+                    android:id="@+id/proceed"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/button_cmbine"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:text="Next"
+
+                    android:textSize="18sp"
+                    android:textColor="@drawable/textcolorchange"
+                    android:gravity="center"
+                    android:clickable="true"
+
+                    android:layout_marginTop="20dp"
+                    />
+
+                <ProgressBar
+                    android:id="@+id/prgrss"
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

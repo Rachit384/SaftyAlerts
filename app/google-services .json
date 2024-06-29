@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "360874109335",
+    "firebase_url": "https://saftyalerts-e1a8e-default-rtdb.firebaseio.com",
+    "project_id": "saftyalerts-e1a8e",
+    "storage_bucket": "saftyalerts-e1a8e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:360874109335:android:6b8b65a415f7a995a87cd2",
+        "android_client_info": {
+          "package_name": "com.example.saftyalerts"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkI9M7QaMUZjcLFway8ywp83X9vUVKHCg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bottombutton"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#686767">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+android:src="@drawable/mikehand"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="6dp"
+        app:shapeAppearance="@style/logo"
+
+
+android:id="@+id/logomike"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#EDEAEA"
+        android:layout_toRightOf="@+id/logomike"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_marginTop="13dp"
+        android:text="Update Yourself"
+        android:textStyle="bold"
+        android:id="@+id/updateyourself"
+        />
+
+
+
+
+
+
+        </RelativeLayout>
+
+</LinearLayout>
+    <FrameLayout android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#202020"
+        android:layout_marginTop="50dp"
+
+
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:id="@+id/card"
+        android:layout_alignBottom="@+id/container"
+        app:cardCornerRadius="20dp"
+        android:backgroundTint="#686767"
+        android:elevation="20dp"
+app:cardUseCompatPadding="true"
+
+        android:layout_alignParentBottom="true"
+        >
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_gravity="center"
+            android:id="@+id/bottom"
+android:layout_marginTop="20dp"
+            android:clickable="true"
+
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+android:layout_alignParentBottom="true"
+            app:menu="@menu/bottom_navigation"
+            android:background="#686767"
+
+
+app:itemIconTint="@color/white"
+
+
+    android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar"
+            />
+
+
+   </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
